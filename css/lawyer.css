@@ -1,0 +1,178 @@
+.lawyer{
+	border-top: .12rem solid #f2f3f6;
+}
+.lawyer_head{
+	overflow: hidden;
+	padding: .40rem 0 0;
+	text-align: center;
+}
+.lawyer_head .head_img{
+	display: block;
+	width: 1.12rem;
+	height: 1.12rem;
+	border-radius: 50%;
+	margin: 0 auto .20rem;
+}
+.lawyer_head h3{
+	color: #3e3e3e;
+	font-size: .28rem;
+	margin: 0 0 .05rem;
+}
+.lawyer_year{
+	margin: .30rem 0;
+}
+.lawyer_year div{
+	display: inline-block;
+	width: 70%;
+	padding: .10rem .35rem .10rem .25rem;
+	border: 1px solid #33A7DA;
+	border-radius: .10rem;
+	text-align: left;
+	margin-bottom: .10rem;
+}
+.lawyer_year div h4{
+	width: 100%;
+	color: #515151;
+	font-size: .24rem;
+	float: left;
+	margin: 0;
+}
+.lawyer_year div h4 span{
+	margin-left: .20rem;
+}
+.lawyer_year div img{
+	display: block;
+	float: right;
+	width: .17rem;
+	height: .31rem;
+}
+.lawyer_head > a{
+	display: block;
+	padding: .30rem;
+	background: #f2f3f6;
+	border: 1px solid #DFDFDF;
+	border-left: 0;
+	border-right: 0;
+	margin-bottom: .25rem;
+	color: #2b2b2b;
+	font-size: .28rem;
+	text-align: left;
+}
+.lawyer_head a img{
+	display: block;
+	width: .16rem;
+	height: .28rem;
+	float: right;
+}
+
+.lawyer_order,.lawyer_income{
+	padding: .30rem;
+	border-bottom: .12rem solid #f2f3f6;
+}
+.lawyer_income{
+	padding-bottom: .15rem;
+}
+.lawyer_order a,.lawyer_income h3,.lawyer_shop .apply_shop{
+	display: block;
+	padding: .10rem 0;
+	color: #2b2b2b;
+	font-size: .28rem;
+	border-bottom: 1px solid #EDEDED;
+	overflow: hidden;
+	margin-bottom: .30rem;
+}
+.lawyer_order a img,.lawyer_shop .apply_shop img{
+	float: right;
+	display: block;
+	width: .16rem;
+	height: .28rem;
+	margin-top: .08rem;
+}
+
+.order_ul{
+	overflow: hidden;
+	margin: 0 0 .20rem;
+}
+.order_ul li{
+	width: 97%;
+	float: right;
+	margin-bottom: .25rem;
+	height: .51rem;
+	color: #444;
+	font-size: .26rem;
+	/*overflow: hidden;*/
+	background: #f2f3f7;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0 .20rem 0 .50rem;
+	box-sizing: border-box;
+}
+.order_ul li img{
+	display: block;
+	width: .51rem;
+	height: .51rem;
+	border-radius: 50%;
+	position: absolute;
+	left: -.18rem;
+	top: 0;
+}
+.order_ul li p{
+	display: block;
+	width: 100%;
+}
+.order_ul li span{
+	float: right;
+	color: #b0b0b0;
+	font-size: .22rem;
+	margin: .05rem 0 0 .30rem;
+}
+.order_ul li:last-child{
+	margin-bottom: 0;
+}
+
+.lawyer_income ul li{
+	background: #f2f3f7;
+	margin-bottom: .20rem;
+	padding: .15rem;
+}
+.lawyer_income ul li h4{
+	color: #606060;
+	font-size: .26rem;
+	margin: 0;
+}
+.lawyer_income ul li h4 span{
+	margin-left: .25rem;
+	font-size: .24rem;
+}
+.lawyer_income ul li h4 b{
+	float: right;
+	color: #e74f5b;
+	font-size: .24rem;
+	font-weight: normal;
+}
+.lawyer_income p{
+	color: #444;
+	font-size: .24rem;
+	text-align: right;
+	margin-top: .30rem;
+}
+.lawyer_income p span{
+	color: #e74f5b;
+}
+
+.lawyer_shop{
+	overflow: hidden;
+	padding: .40rem .30rem;
+}
+.lawyer_shop h3{
+	color: #2b2b2b;
+	font-size: .28rem;
+	border-bottom: 1px solid #ECECEC;
+	margin: 0 0 .30rem;
+}
+.lawyer_shop h3 span{
+	display: inline-block;
+	padding: 0 0 .13rem;
+	border-bottom: 1px solid #189BD5;
+}

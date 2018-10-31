@@ -1,0 +1,28 @@
+.complaint_box{
+	overflow: hidden;
+	padding: .20rem .30rem;
+}
+.area_title{
+	margin-bottom: .20rem;
+}
+.area_title,.area_content{
+	border: .02rem solid  #DADADA;
+}
+.area_title textarea,.area_content textarea{
+	display: block;
+	width: 100%;
+	border: 0;
+	background: #f6f6f6;
+	padding: .20rem;
+	box-sizing: border-box;
+	color: #707070;
+	font-size: .26rem;
+	outline: none;
+	resize: none;
+}
+.area_title textarea{
+	height: 1.60rem;
+}
+.area_content textarea{
+	height: 4.00rem;
+}

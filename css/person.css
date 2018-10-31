@@ -1,0 +1,228 @@
+.vip_box{
+	margin: .35rem 0 0;
+	overflow: hidden;
+	/* border-bottom: .12rem solid #F2F3F6; */
+}
+.cell_box{
+  overflow: hidden;
+  border: 1px solid #E9E9E9;
+  padding: .20rem .20rem .25rem;
+  margin: 0 0 .60rem;
+}
+.collect_cell a{
+  color: #2b2b2b;
+  font-size: .30rem;
+}
+.head_box{
+	background: #f9f9f9;
+}
+.cell_box h3{
+  font-size: .30rem;
+  margin: 0 0 .20rem;
+  padding-bottom: .20rem;
+  font-weight: normal;
+  border-bottom: 1px solid #F3F3F3;
+  overflow: hidden;
+}
+.head_box h3{
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.head_box h3 img{
+	display: block;
+	width: .36rem;
+	height: .36rem;
+	float: right;
+}
+.order_box h3 a{
+  float: right;
+  color: #3598dc;
+  font-size: .22rem;
+  border: 1px solid #5BB8E0;
+  border-radius: .20rem;
+  padding: .05rem .15rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.order_box h3 a img{
+  width: .18rem;
+  height: .10rem;
+}
+.cell_box h4{
+  color: #3e3e3e;
+  font-size: .30rem;
+  margin: 0 0 .10rem;
+  text-align: center;
+  font-weight: 500;
+}
+.ls_head{
+  display: block;
+  width: 1.30rem;
+  height: 1.30rem;
+  border-radius: 50%;
+  margin: .10rem auto .20rem;
+  padding: .05rem;
+  border: 1px solid #ECECEC;
+}
+
+.collect_cell a{
+  color: #2b2b2b;
+  font-size: .30rem;
+}
+.collect_cell a{
+  display: block;
+  padding: .20rem;
+  border: 1px solid #F1F1F1;
+  color: #2b2b2b;
+  font-size: .28rem;
+}
+.collect_cell a{
+  display: block;
+  padding: 0;
+  border-bottom: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #E9E9E9;
+  padding: .20rem;
+  margin: 0 0 .30rem;
+}
+.lawyer a img,.collect_cell a img{
+  display: block;
+  width: .16rem;
+  height: .19rem;
+  float: right;
+  margin-top: .08rem;
+}
+.lawyer a img,.collect_cell a img{
+  width: .12rem;
+  height: .22rem;
+  margin-top: .08rem;
+}
+
+.lawyer{
+  overflow: hidden;
+  padding: .20rem .30rem .60rem;
+}
+.lawyer a,.collect_cell a{
+  display: block;
+  padding: .20rem;
+  border: 1px solid #F1F1F1;
+  color: #2b2b2b;
+  font-size: .28rem;
+}
+.collect_cell a{
+  display: block;
+  padding: 0;
+  border-bottom: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #E9E9E9;
+  padding: .20rem;
+  margin: 0 0 .30rem;
+}
+.lawyer a img,.collect_cell a img{
+  display: block;
+  width: .16rem;
+  height: .19rem;
+  float: right;
+  margin-top: .08rem;
+}
+.lawyer a img,.collect_cell a img{
+  width: .12rem;
+  height: .22rem;
+  margin-top: .08rem;
+}
+
+
+
+.vip_zone{
+  overflow: hidden;
+  padding: 0 .30rem .40rem;
+  border-bottom: .12rem solid #F2F3F6;
+}
+.vip_zone h3{
+  color: #2b2b2b;
+  font-size: .28rem;
+  padding-bottom: .20rem;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: .25rem;
+}
+.vip_zone ul{
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.vip_zone ul li{
+   width: 90%; 
+  /*width: 6.03rem;*/
+  /*height: 2.55rem;*/
+  display: inline-block;
+  margin-right: .25rem;
+  position: relative;
+  /* float: left; */
+}
+.vip_zone ul li:last-child{
+  margin-right: 0;
+}
+.vip_layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: .20rem;
+  box-sizing: border-box;
+}
+.vip_layer h5{
+  color: #fff;
+  font-size: .28rem;
+  padding-bottom: .20rem;
+  margin: 0 0 .15rem;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.vip_zone ul li.active .vip_layer h5{
+  color: #5a5a5a;
+  border-color: #C2C6CE;
+}
+.vip_layer .layer_box{
+  overflow: hidden;
+}
+.layer_box .left{
+  float: left;
+  margin-right: .20rem;
+}
+.layer_box .left img{
+  display: block;
+  width: 1.20rem;
+  height: 1.20rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.layer_box .right{
+  color: #fff;
+}
+.layer_box .right h4{
+  font-size: .30rem;
+  margin: .30rem 0 .10rem;
+}
+.layer_box .right p{
+  font-size: .24rem;
+}
+/* .vip_zone ul li:last-child{
+  float: right;
+} */
+.vip_zone ul li img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.vip_zone ul li:active img{
+  opacity: .8;
+}
+
+
+.project_ul2 li{
+  margin-bottom: .15rem;
+}

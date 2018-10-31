@@ -1,0 +1,33 @@
+.certy_box{
+	border-top: .12rem solid #f2f3f6;
+	padding: .30rem 0;
+}
+.certy_box h3{
+	color: #363636;
+	font-size: .28rem;
+	padding: 0 .30rem .15rem;
+	border-bottom: 1px solid #EDEDED;
+	margin: 0;
+}
+.certy_box ul li{
+	overflow: hidden;
+	padding: .30rem;
+	border-bottom: 1px solid #EDEDED;
+	color: #7b7b7b;
+	font-size: .24rem;
+	display: flex;
+	align-items: center;
+}
+.certy_box ul li .cleft{
+	width: 40%;
+	float: left;
+}
+.certy_box ul li .cright{
+	width: 60%;
+	float: left;
+}
+.certy_box ul li .cright span{
+	display: inline-block;
+	padding: .10rem 1.00rem .10rem .15rem;
+	border: 1px solid #EDEDED;
+}

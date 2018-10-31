@@ -1,0 +1,23 @@
+.collect_box{
+  padding: .25rem .30rem .10rem;
+}
+.shop_top{
+  position: relative;
+}
+.delete_box{
+  position: absolute;
+  top: .30rem;
+  right: .20rem;
+  color: #fff;
+  font-size: .20rem;
+}
+.delete_box img{
+  display: inline-block;
+  width: .20rem;
+  height: .26rem;
+  vertical-align: middle;
+  margin: 0 .03rem .08rem 0;
+}
+.shop_right{
+  padding: .20rem 0 .20rem .35rem;
+}

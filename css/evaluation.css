@@ -1,0 +1,56 @@
+.eval_box{
+	overflow: hidden;
+	padding: .35rem .30rem;
+}
+.rate_box{
+	margin-bottom: .35rem;
+	overflow: hidden;
+}
+.rate_box .r_title{
+	color: #707070;
+	font-size: .24rem;
+	border: 1px solid #D3D3D3;
+	padding: .10rem .20rem;
+	margin-right: .25rem;
+	float: left;
+}
+
+.star{
+	overflow: hidden;
+	float: left;
+}
+.star-item{
+	float: left;
+}
+.star-item span{
+	display: inline-block;
+	width: .45rem;
+	height: .43rem;
+	margin-right: .23rem;
+	background: url(../images/icon/rate.png) center center no-repeat;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-top: .05rem;
+}
+.star-item.active span{
+	background: url(../images/icon/rate_on.png) center center no-repeat;
+	background-size: 100%;
+}
+
+.area_box{
+	overflow: hidden;
+	border: .02rem solid #D2D2D2;
+	margin-bottom: .60rem;
+}
+.area_box textarea{
+	display: block;
+	width: 100%;
+	height: 3.85rem;
+	border: 0;
+	color: #707070;
+	font-size: .26rem;
+	padding: .20rem;
+	box-sizing: border-box;
+	outline: none;
+	resize: none;
+}

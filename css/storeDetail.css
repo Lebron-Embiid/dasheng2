@@ -1,0 +1,66 @@
+.detail_select{
+	overflow: hidden;
+	padding: .15rem .3rem;
+	background: #eee;
+}
+.detail_select .left{
+	width: 48%;
+	float: left;
+}
+.detail_select .right{
+	width: 48%;
+	float: right;
+}
+.detail_select select{
+	display: block;
+	width: 100%;
+	background: #fff;
+	border-radius: .05rem;
+	outline: none;
+	font-size: .26rem;
+	border: 1px solid #e1e1e1;
+	padding: .1rem 0 .1rem .15rem;
+}
+
+.shop_box{
+	padding: .25rem .30rem .10rem;
+}
+
+.legal{
+	border: 1px solid #E8E8E8;
+	padding: .20rem .15rem .35rem;
+	margin-bottom: .5rem;
+}
+.legal h3{
+	color: #2b2b2b;
+	font-size: .30rem;
+	padding-bottom: .20rem;
+	margin-bottom: .20rem;
+	border-bottom: 1px solid #E8E8E8;
+}
+.legal div{
+	overflow: hidden;
+	background: #fafafa;
+}
+.legal div a{
+	display: flex;
+	align-items: center;
+	color: #444;
+	font-size: .26rem;
+	padding-right: .30rem;
+	box-sizing: border-box;
+}
+.legal div a span{
+	display: block;
+	width: 100%;
+}
+.legal div a span i{
+	float: right;
+	font-style: normal;
+}
+.legal div img{
+	display: inline-block;
+	width: .56rem;
+	height: .56rem;
+	margin-right: .10rem;
+}

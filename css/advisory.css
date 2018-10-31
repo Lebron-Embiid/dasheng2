@@ -1,0 +1,52 @@
+.advisory_box{
+	overflow: hidden;
+	padding: .15rem 0;
+	padding-top: .12rem solid #f2f3f6;
+}
+.advisory_box ul li{
+	overflow: hidden;
+	padding: .30rem;
+	border-bottom: 1px solid #EDEDED;
+}
+.advisory_box .img{
+	width: .70rem;
+	height: .70rem;
+	float: left;
+	position: relative;
+	margin-right: .20rem;
+}
+.advisory_box .img img{
+	display: block;
+	width: .70rem;
+	height: .70rem;
+	border-radius: 50%;
+}
+.advisory_box .img.active::after{
+	content: "";
+	display: block;
+	width: .16rem;
+	height: .16rem;
+	border-radius: 50%;
+	background: #ca1815;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.advisory_box .info{
+	width: 84%;
+	float: left;
+}
+.advisory_box .info h4{
+	color: #333;
+	font-size: .28rem;
+	margin: 0 0 .10rem;
+}
+.advisory_box .info h4 span{
+	float: right;
+	color: #999;
+	font-size: .20rem;
+}
+.advisory_box .info p{
+	color: #666;
+	font-size: .24rem;
+}
