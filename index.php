@@ -36,14 +36,14 @@
 			<div class="service_project">
 				<h3>服务中的项目<a href="moreOrder.php">More<img src="images/icon/down.png"></a></h3>
 				<ul class="project_ul1">
-					<li><a href=""><img src="images/ls_head.png">专属律师：王小小a<span>2018-08-29</span></a></li>
-					<li><a href=""><img src="images/ls_head.png">专属律师：王小小a<span>2018-08-29</span></a></li>
-					<li><a href=""><img src="images/ls_head.png">专属律师：王小小a<span>2018-08-29</span></a></li>
+					<li><a href="chat.php"><img src="images/ls_head.png">专属律师：王小小a<span>2018-08-29</span></a></li>
+					<li><a href="chat.php"><img src="images/ls_head.png">专属律师：王小小a<span>2018-08-29</span></a></li>
+					<li><a href="chat.php"><img src="images/ls_head.png">专属律师：王小小a<span>2018-08-29</span></a></li>
 				</ul>
 				<ul class="project_ul2">
-					<li><a href=""><img src="images/icon/serve_icon1.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
-					<li><a href=""><img src="images/icon/serve_icon2.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
-					<li><a href=""><img src="images/icon/serve_icon3.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
+					<li><a href="eOrder.php"><img src="images/icon/serve_icon1.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
+					<li><a href="eOrder.php"><img src="images/icon/serve_icon2.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
+					<li><a href="eOrder.php"><img src="images/icon/serve_icon3.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 		</div>
 	</div>
 	<div class="footer_words">
-		<h5>还不清楚需要哪个服务？请使用<a href="">在线客服</a>。</h5>
+		<h5>还不清楚需要哪个服务？请使用<a href="chat.php">在线客服</a>。</h5>
 		<h3>大胜法宝</h3>
 		<p>让每个法律纠纷，都获得律师帮助</p>
     </div>
@@ -76,7 +76,7 @@
 <script>
 	$(function(){
 		$(".search_box .sleft input").focus(function(){
-			window.location.href = "/dasheng2/store.php";
+			window.location.pathname = "/dasheng2/store.php";
 		})
 	})
 </script>

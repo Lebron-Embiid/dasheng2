@@ -9,8 +9,10 @@
 	<meta name="renderer" content="webkit">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/img.css">
 	<link rel="stylesheet" href="css/evaluation.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/imgUp.js"></script>
 </head>
 <body>
 	<?php include "header.php"; ?>
@@ -28,6 +30,22 @@
 		<div class="area_box">
 			<textarea name="rate_content" v-model="rate_content" placeholder="请填写评价内容"></textarea>
 		</div>
+		<div class="img-box full">
+			<section class=" img-section">
+				<div class="z_photo upimg-div clear" >
+	               	 <section class="z_file fl">
+	               	 	<img src="images/upload_pic_bg1.jpg" class="add-img">
+	               	 	<input type="file" name="file" id="file" multiple class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+	               	 </section>
+		         </div>
+			 </section>
+		</div>
+        <aside class="mask works-mask">
+			<div class="mask-content">
+				<p class="del-p">您确定要删除作品图片吗？</p>
+				<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+			</div>
+		</aside>
 	</div>
 	<div class="buy_box">
 		<a href="javascript:void(0);">发布</a>

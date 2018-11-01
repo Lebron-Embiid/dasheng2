@@ -1,0 +1,13 @@
+.pick-area{width: 75% !important;display:inline-block;position:relative;font-size:.14rem;background:#fff;text-decoration: none;cursor:default;}
+
+.pick-show{position:relative;padding:0 .08rem !important;height:.72rem;line-height:.72rem;border:1px solid #dedede;border-radius: .03rem;}
+.pick-show span{color: #7c7c7c;font-size: .24rem !important;float:left;display:inline-block;max-width:1.00rem;padding: 0 .03rem;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;color:#333;cursor:pointer;text-align: center !important;background: none !important;}
+.pick-show span:hover{border-radius: .03rem;}
+.pick-show span.pressActive{border-radius: .03rem}
+.pick-show em.pick-arrow{position:absolute;top:.32rem;right:.08rem;display: block;border:.08rem solid #999;border-left:.08rem solid transparent;border-right:.08rem solid transparent;border-bottom:.08rem solid transparent;}
+.pick-show i{float:left;display:inline-block;padding:0 .03rem;color:#333;font-style:normal;}
+
+.pick-list{width: 100% !important;max-height: 2.2rem !important;display:none;position:absolute;line-height:.36rem;margin:0;padding:0;background:#fff;z-index:999999999;overflow-y:auto;overflow-x:hidden;border:1px solid #dedede;border-top:none;}
+.pick-list li{margin:0 !important;padding: .1rem 0 .1rem .08rem;font-size: .24rem;list-style: none;color:#888;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.pick-list li:hover{color:#fff;font-weight:bold;}
+

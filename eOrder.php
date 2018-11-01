@@ -1,3 +1,8 @@
+<?php 
+	error_reporting(0);
+	$id = $_GET['id'];
+	if(!$id){ $id=1; }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +14,14 @@
 	<meta name="renderer" content="webkit">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/rolldate.css">
+	<link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/pick-pcc.css"/>
 	<link rel="stylesheet" href="css/eOrder.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/rolldate.js"></script>
+	<script src="js/imgUp.js"></script>
+	<script src="js/pick-pcc.js"></script>
 </head>
 <body>
 	<?php include "header.php"; ?>
@@ -67,7 +78,7 @@
 		<div class="tab1_cell">
 			<div class="left">收到法院文书时间</div>
 			<div class="right">
-				<input type="text" name="appDate" id="appDate" disabled value="2019-08-18" autocomplete="off">
+				<input readonly type="text" id="date1" placeholder="2018-08-18">
 			</div>
 		</div>
 		<div class="tab1_cell">
@@ -83,31 +94,39 @@
 			</div>
 		</div>
 	</div>
-	<div class="tab1_info">
+	<div class="tab1_info address_info">
 		<h3>地址信息</h3>
 		<div class="tab1_cell">
 			<div class="left">被告户籍地</div>
 			<div class="right">
+				<div class="pick-area pick-area1" name=""></div>
 				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
 			</div>
+			<div class="clearfix"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">被高满一年居住地</div>
 			<div class="right">
+				<div class="pick-area pick-area1" name=""></div>
 				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
 			</div>
+			<div class="clearfix"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">房产所在地</div>
 			<div class="right">
+				<div class="pick-area pick-area1" name=""></div>
 				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
 			</div>
+			<div class="clearfix"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">原告户籍地</div>
 			<div class="right">
+				<div class="pick-area pick-area1" name=""></div>
 				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
 			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 	<div class="tab1_info">
@@ -196,14 +215,16 @@
 	<div class="nav_tab">
 	<div class="tab2_info">
 		<!-- 律师 -->
-		<ul v-show="eOrder_title == '律师信息'">
+		<?php if($id == 1){ ?>
+		<ul>
 			<li>
 				<div class="process_box active">
 					<img src="images/icon/e_icon_on1.png" class="icon">
 					<div class="gray_div">
 						<h2>案件信息</h2>
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
@@ -215,8 +236,27 @@
 						<h2>证据信息查询</h2>
 						<h3>查征信登记表</h3>
 						<p>举证信息查询单</p>
+
+						<div class="img-box full">
+							<section class=" img-section">
+								<div class="z_photo upimg-div clear" >
+					               	 <section class="z_file fl">
+					               	 	<img src="images/upload_bg.jpg" class="add-img">
+					               	 	<input type="file" name="file" id="file1" multiple class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+					               	 </section>
+						         </div>
+							 </section>
+						</div>
+				        <aside class="mask works-mask">
+							<div class="mask-content">
+								<p class="del-p">您确定要删除作品图片吗？</p>
+								<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+							</div>
+						</aside>
+
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
@@ -229,22 +269,43 @@
 						<h3>合同</h3>
 						<h3>委托书</h3>
 						<p>起诉状、财产保全申请书、财产保全担保书、证据自录</p>
+
+						<div class="img-box full">
+							<section class=" img-section">
+								<div class="z_photo upimg-div clear" >
+					               	 <section class="z_file fl">
+					               	 	<img src="images/upload_bg.jpg" class="add-img">
+					               	 	<input type="file" name="file" id="file1" multiple class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+					               	 </section>
+						         </div>
+							 </section>
+						</div>
+				        <aside class="mask works-mask">
+							<div class="mask-content">
+								<p class="del-p">您确定要删除作品图片吗？</p>
+								<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+							</div>
+						</aside>
+
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
 			</li>
 		</ul>
+		<?php }else{ ?>
 		<!-- 客户 -->
-		<ul v-show="eOrder_title == '客户信息'">
+		<ul>
 			<li>
 				<div class="process_box active">
 					<img src="images/icon/e_icon_on1.png" class="icon">
 					<div class="gray_div">
 						<h2>案件信息</h2>
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
@@ -257,7 +318,8 @@
 						<h3>查征信登记表</h3>
 						<p>举证信息查询单</p>
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
@@ -271,7 +333,8 @@
 						<h3>委托书</h3>
 						<p>起诉状、财产保全申请书、财产保全担保书、证据自录</p>
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
@@ -284,14 +347,16 @@
 						<h3>受理通知</h3>
 						<h3>受理通知</h3>
 						<p>提交材料清单、证据目录</p>
-						<p>消费期限告知书、诉讼费缴纳期限<span>2019-08-17</span></p>
+						<p>消费期限告知书、诉讼费缴纳期限<span class="time_span">2019-08-17</span></p>
 						<div class="process_btn">
-							<span>客户确认<img src="images/icon/till.png"><img src="images/icon/project_icon3.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
+							<span>客户确认<img src="images/icon/till.png"></span>
 						</div>
 					</div>
 				</div>
 			</li>
 		</ul>
+		<?php } ?>
 	</div>
 	</div>
 	<div class="nav_tab">
@@ -322,10 +387,39 @@
 </body>
 <script>
 	$(function(){
+		document.getElementById('date1').date = new Date('2018/08/18');//默认日期
+		new rolldate.Date({
+		 	el:'#date1',
+			format:'YYYY-MM-DD',
+			beginYear:1900,
+			endYear:2100,
+			theme: "#e74f5b",
+			confirmBefore: function(el, date){
+		        document.getElementById('date1').value = date;
+		    }
+		})
+
+		$(".pick-area1").pickArea();
+
 		$(".nav_ul").on("click","li",function(){
 			let index = $(this).index();
 			$(this).addClass("active").siblings().removeClass("active");
 			$(".nav_tab").eq(index).addClass("active").siblings(".nav_tab").removeClass("active");
+		})
+		$(".process_btn span").click(function(){
+			let index = $(this).index();
+			let conf = [];
+			conf[index] = confirm("是否确认信息？");
+			if(conf){
+				var nowDate = new Date();
+			    var year = nowDate.getFullYear();
+			    var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1) : nowDate.getMonth() + 1;
+			    var date = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();
+			    var str = year + "-" + month + "-" + date;
+				$(this).html(str+"<img src='images/icon/project_icon3.png'>");
+			}else{
+
+			}
 		})
 	})
 </script>

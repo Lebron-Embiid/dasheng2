@@ -4,3 +4,12 @@
 	<div class="right <?php if($a==1 || $a==2){ echo ""; }else{ echo "dn"; } ?>"><img src="images/icon/person.png"></div>
 </div>
 <div class="pt88"></div>
+
+<script>
+	$(function(){
+		$(".header .right").click(function(){
+			console.log(window.location)
+			window.location.pathname = "/dasheng2/person.php";
+		})
+	})
+</script>

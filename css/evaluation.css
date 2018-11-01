@@ -1,3 +1,7 @@
+.upimg-div .up-section,.img-box .upimg-div .z_file{
+	width: 1.79rem;
+	height: 1.79rem;
+}
 .eval_box{
 	overflow: hidden;
 	padding: .35rem .30rem;
@@ -40,7 +44,7 @@
 .area_box{
 	overflow: hidden;
 	border: .02rem solid #D2D2D2;
-	margin-bottom: .60rem;
+	margin-bottom: .40rem;
 }
 .area_box textarea{
 	display: block;

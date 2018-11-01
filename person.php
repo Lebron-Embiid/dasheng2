@@ -30,9 +30,9 @@
         <div class="cell_box order_box">
 			<h3>我的订单<a href="moreOrder.php">More <img src="images/icon/down.png"></a></h3>
 			<ul class="project_ul2">
-				<li><a href=""><img src="images/icon/serve_icon1.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
-				<li><a href=""><img src="images/icon/serve_icon2.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
-				<li><a href=""><img src="images/icon/serve_icon3.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
+				<li><a href="eOrder.php"><img src="images/icon/serve_icon1.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
+				<li><a href="eOrder.php"><img src="images/icon/serve_icon2.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
+				<li><a href="eOrder.php"><img src="images/icon/serve_icon3.png">用工合同纠纷咨询<span>2018-08-29</span></a></li>
 			</ul>
         </div>
       </div>
@@ -73,7 +73,7 @@
 		</ul>
     </div>
     <div class="lawyer">
-    	<a href="lawyer.php">我是律师<img src="images/icon/right_three3.png" alt=""></a>
+    	<a href="applyFirst.php">我是律师<img src="images/icon/right_three3.png" alt=""></a>
     </div>
     <?php include "footer.php"; ?>
 </body>

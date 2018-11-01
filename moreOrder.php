@@ -28,7 +28,7 @@
 			<div class="left">
 				<h4>订单号：13689895656</h4>
 				<p>服务费：¥35000.00</p>
-				<!-- <span :class="item.service">{{item.status}}</span> -->
+				<!-- <span class="active">服务中</span> -->
 				<span>律师：张三 13689895656</span>
 			</div>
 			<div class="right">
@@ -40,7 +40,7 @@
 			<div class="left">
 				<h4>订单号：13689895656</h4>
 				<p>服务费：¥35000.00</p>
-				<!-- <span :class="item.service">{{item.status}}</span> -->
+				<!-- <span class="active">服务中</span> -->
 				<span>律师：张三 13689895656</span>
 			</div>
 			<div class="right">

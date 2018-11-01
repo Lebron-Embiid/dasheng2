@@ -1,3 +1,9 @@
+.img-box{
+	padding-bottom: 0;
+}
+.mask{
+	background: rgba(0,0,0,.2);
+}
 .order_box{
 	border: .12rem solid #f2f3f6;
 	border-left: 0;
@@ -108,6 +114,20 @@
 	padding: .25rem .30rem .15rem;
 	border-bottom: 1px solid #EDEDED;
 	overflow: hidden;
+}
+
+.pick-area{
+	width: 100% !important;
+}
+.pick-show{
+	height: .6rem;
+	line-height: .6rem;
+}
+.pick-show em.pick-arrow{
+	top: .25rem;
+}
+.address_info .tab1_cell{
+	overflow: visible;
 }
 .tab1_cell:last-child{
 	border-bottom: 0;
@@ -259,12 +279,12 @@
 	font-size: .22rem;
 	margin: 0 0 .10rem;
 }
-.gray_div p{
+.gray_div > p{
 	color: #8f8f8f;
 	font-size: .20rem;
 	margin-bottom: .10rem;
 }
-.gray_div p span{
+.gray_div .time_span{
 	display: inline-block;
 	padding: .04rem .15rem;
 	border-radius: .50rem;
@@ -275,11 +295,11 @@
 }
 .process_btn{
 	margin: .10rem 0 0;
-}
-.process_btn span{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.process_btn span{
 	width: 2.30rem;
 	padding: .05rem .15rem;
 	box-sizing: border-box;
@@ -299,6 +319,7 @@
 	width: .24rem;
 	height: .24rem;
 	vertical-align: middle;
+	margin-top: .03rem;
 }
 
 

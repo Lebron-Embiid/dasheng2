@@ -18,7 +18,10 @@
 		<div class="settings_top">
 			<h4>个人信息管理</h4>
 			<div class="text-center">
-				<img src="images/ls_head.png" class="ls_head">
+				<div class="img_box">
+					<img src="images/ls_head.png" class="ls_head">
+					<input type="file" class="file" name="">
+				</div>
 	      	</div>
 			<h3>主律师：Alexander</h3>
 		</div>
@@ -53,4 +56,43 @@
 		</div>
 	</div>
 </body>
+<script>
+	$(function(){
+		// var img = "images/advisory2.png";//imgurl 就是你的图片路径  
+
+		// function getBase64Image(img) {  
+		//      var canvas = document.createElement("canvas");  
+		//      canvas.width = img.width;  
+		//      canvas.height = img.height;  
+		//      var ctx = canvas.getContext("2d");  
+		//      ctx.drawImage(img, 0, 0, img.width, img.height);  
+		//      var ext = img.src.substring(img.src.lastIndexOf(".")+1).toLowerCase();  
+		//      var dataURL = canvas.toDataURL("image/"+ext);  
+		//      return dataURL;  
+		// }  
+
+		// var image = new Image();  
+		// image.src = img;  
+		// image.onload = function(){  
+		//   var base64 = getBase64Image(image);  
+		//   console.log(base64)
+		// }
+
+		$(".text-center").on("change","input",function(){
+			var filePath=$(this).val();
+			if(filePath.indexOf("jpg")!=-1 || filePath.indexOf("png")!=-1){
+				$(".fileerrorTip").html("").hide();
+		        var arr=filePath.split('\\');
+		        var fileName=arr[arr.length-1];
+		        console.log($(".ls_head").attr("src"))
+		        $(".ls_head").attr("src","images/"+fileName)
+		        console.log($(".ls_head").attr("src"))
+		        console.log(base64)
+			}else{
+		        alert("您未上传文件，或者您上传文件类型有误！");
+		        return false;
+			}
+		})
+	})
+</script>
 </html>

@@ -1,5 +1,19 @@
+.img-box{
+	padding-bottom: 0;
+}
+.pick-area{
+	width: 100% !important;
+}
+.pick-show{
+	height: .6rem;
+	line-height: .6rem;
+}
+.pick-show em.pick-arrow{
+	top: .25rem;
+}
 .shop_box{
 	border-top: .12rem solid #f2f3f6;
+	padding-bottom: 1.5rem;
 }
 .shop_box h3{
 	color: #363636;
@@ -14,7 +28,7 @@
 	padding: 0 .30rem;
 }
 .write_item{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	border-bottom: 1px solid #ECECEC;
 	padding: .30rem 0 .15rem;
 	display: flex;
@@ -36,11 +50,12 @@
 	outline: none;
 	border: 0;
 }
-.item_right ul{
+/*.item_right ul{
 	overflow: hidden;
 	margin-bottom: .12rem;
-}
-.item_right ul li,.item_right .shop_name{
+}*/
+/*.item_right ul li,*/
+.item_right .shop_name{
 	float: left;
 	width: 1.40rem;
 	margin-right: .20rem;
