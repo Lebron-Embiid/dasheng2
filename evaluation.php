@@ -28,7 +28,7 @@
 			</ul>
 		</div>
 		<div class="area_box">
-			<textarea name="rate_content" v-model="rate_content" placeholder="请填写评价内容"></textarea>
+			<textarea name="rate_content" placeholder="请填写评价内容"></textarea>
 		</div>
 		<div class="img-box full">
 			<section class=" img-section">

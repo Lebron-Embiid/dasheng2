@@ -19,34 +19,32 @@
 		<div class="first_box">
 			<div class="first_item">
 				<div class="left">手机号码</div>
-				<div class="right"><div>
-					<input type="text" name="phone" class="phone_ipt" placeholder="填写手机号码">
-					<span><button class="getCode">获取验证码</button></span>
-				</div></div>
+				<div class="right">
+					<div>
+						<input type="text" name="phone" class="phone_ipt" autocomplete="off" placeholder="填写手机号码">
+						<span><button class="getCode">获取验证码</button></span>
+					</div>
+				</div>
 			</div>
 			<div class="first_item">
 				<div class="left">发送验证</div>
-				<div class="right"><div><input type="text" name="code" placeholder="填写验证信息"></div></div>
+				<div class="right"><div><input type="text" name="code" autocomplete="off" placeholder="填写验证信息"></div></div>
 			</div>
 			<div class="first_item">
 				<div class="left">您的姓名</div>
-				<div class="right"><div><input type="text" name="real_name" placeholder="须填写真实姓名"></div></div>
+				<div class="right"><div><input type="text" name="real_name" autocomplete="off" placeholder="须填写真实姓名"></div></div>
 			</div>
 			<div class="first_item">
 				<div class="left">执业证编号</div>
-				<div class="right"><div><input type="text" name="number" placeholder="须填写执业证编号"></div></div>
+				<div class="right"><div><input type="text" name="number" autocomplete="off" placeholder="须填写执业证编号"></div></div>
 			</div>
 			<div class="first_item">
-				<div class="left">店铺名称</div>
-				<div class="right"><div><input type="text" name="shop_name" autocomplete="off" placeholder="填写店铺名称"></div></div>
+				<div class="left">执业年限</div>
+				<div class="right"><div><input type="text" name="shop_year" autocomplete="off" placeholder="填写执业年限"></div></div>
 			</div>
 			<div class="first_item">
-				<div class="left">店铺密码</div>
-				<div class="right"><div><input type="password" name="shop_pwd" autocomplete="off" placeholder="填写店铺密码"></div></div>
-			</div>
-			<div class="first_item">
-				<div class="left">确认密码</div>
-				<div class="right"><div><input type="password" name="shop_pwd" autocomplete="off" ></div></div>
+				<div class="left">专业擅长</div>
+				<div class="right"><div><input type="text" name="shop_skill" autocomplete="off" placeholder="填写专业擅长"></div></div>
 			</div>
 		</div>
 		<div class="buy_box">

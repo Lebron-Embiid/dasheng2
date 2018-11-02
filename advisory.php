@@ -24,35 +24,35 @@
 				</div>
 			</li>
 			<li>
-				<div class="img" class=""><img src="images/advisory2.png"></div>
+				<div class="img"><img src="images/advisory2.png"></div>
 				<div class="info">
 					<h4>Crustal Au<span>1小时前</span></h4>
 					<p>眼瞅着客户欠钱不还没信用，企业只能干着急...</p>
 				</div>
 			</li>
 			<li>
-				<div class="img" class=""><img src="images/advisory3.png"></div>
+				<div class="img"><img src="images/advisory3.png"></div>
 				<div class="info">
 					<h4>Anthony Chu<span>下午7:50</span></h4>
 					<p>眼瞅着客户欠钱不还没信用，企业只能干着急...</p>
 				</div>
 			</li>
 			<li>
-				<div class="img" class=""><img src="images/advisory4.png"></div>
+				<div class="img"><img src="images/advisory4.png"></div>
 				<div class="info">
 					<h4>171201-PW3<span>下午7:50</span></h4>
 					<p>眼瞅着客户欠钱不还没信用，企业只能干着急...</p>
 				</div>
 			</li>
 			<li>
-				<div class="img" class=""><img src="images/advisory5.png"></div>
+				<div class="img"><img src="images/advisory5.png"></div>
 				<div class="info">
 					<h4>171201-PW4<span>2017年11月15日</span></h4>
 					<p>眼瞅着客户欠钱不还没信用</p>
 				</div>
 			</li>
 			<li>
-				<div class="img" class=""><img src="images/advisory6.png"></div>
+				<div class="img"><img src="images/advisory6.png"></div>
 				<div class="info">
 					<h4>171201-PW3<span>2017年11月3日</span></h4>
 					<p>谢谢</p>

@@ -16,10 +16,10 @@
 	<?php include "header.php"; ?>
 	<div class="complaint_box">
 		<div class="area_title">
-			<textarea name="title" v-model="title" placeholder="请填写投诉标题内容"></textarea>
+			<textarea name="title" placeholder="请填写投诉标题内容"></textarea>
 		</div>
 		<div class="area_content">
-			<textarea name="content" v-model="content" placeholder="请填写投诉内容详情"></textarea>				
+			<textarea name="content" placeholder="请填写投诉内容详情"></textarea>				
 		</div>
 	</div>
 	<div class="buy_box">

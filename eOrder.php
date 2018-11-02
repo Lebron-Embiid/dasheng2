@@ -50,30 +50,30 @@
 		<h3>您的信息</h3>
 		<div class="tab1_cell">
 			<div class="left">姓名</div>
-			<div class="right"><input type="text" placeholder="须填写真实姓名" v-model="username" name="username" autocomplete="off"></div>
+			<div class="right"><input type="text" placeholder="须填写真实姓名" name="username" autocomplete="off"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">住址</div>
-			<div class="right"><input type="text" placeholder="须填写，用于判断司法管辖地" v-model='address' name="address" autocomplete="off"></div>
+			<div class="right"><input type="text" placeholder="须填写，用于判断司法管辖地" name="address" autocomplete="off"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">手机</div>
-			<div class="right"><input type="text" placeholder="须填写" name="phone" v-model="myphone" autocomplete="off"></div>
+			<div class="right"><input type="text" placeholder="须填写" name="phone" autocomplete="off"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">Email</div>
-			<div class="right"><input type="text" placeholder="" name="email" v-model="myemail" autocomplete="off"></div>
+			<div class="right"><input type="text" placeholder="" name="email" autocomplete="off"></div>
 		</div>
 	</div>
 	<div class="tab1_info">
 		<h3>纠纷方信息</h3>
 		<div class="tab1_cell">
 			<div class="left">姓名</div>
-			<div class="right"><input type="text" placeholder="须填写真实姓名" v-model="othername" name="othername" autocomplete="off"></div>
+			<div class="right"><input type="text" placeholder="须填写真实姓名" name="othername" autocomplete="off"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">纠纷发生事件</div>
-			<div class="right"><input type="text" placeholder="" name="event" v-model="eventVal" autocomplete="off"></div>
+			<div class="right"><input type="text" placeholder="" name="event" autocomplete="off"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">收到法院文书时间</div>
@@ -100,31 +100,31 @@
 			<div class="left">被告户籍地</div>
 			<div class="right">
 				<div class="pick-area pick-area1" name=""></div>
-				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
+				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" name="">
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">被高满一年居住地</div>
 			<div class="right">
-				<div class="pick-area pick-area1" name=""></div>
-				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
+				<div class="pick-area pick-area2" name=""></div>
+				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" name="">
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">房产所在地</div>
 			<div class="right">
-				<div class="pick-area pick-area1" name=""></div>
-				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
+				<div class="pick-area pick-area3" name=""></div>
+				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" name="">
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="tab1_cell">
 			<div class="left">原告户籍地</div>
 			<div class="right">
-				<div class="pick-area pick-area1" name=""></div>
-				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" :name="item.name">
+				<div class="pick-area pick-area4" name=""></div>
+				<input type="text" placeholder="详细地址，如应方街道26号18栋2003" name="">
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -204,11 +204,11 @@
 		</div>
 		<div class="other_cell">
 			<h3>其他补充证据</h3>
-			<textarea name="other" v-model="other_evidence" placeholder="请详细描述纠纷事件经过..."></textarea>
+			<textarea name="other" placeholder="请详细描述纠纷事件经过..."></textarea>
 		</div>
 		<div class="other_cell">
 			<h3>事件描述</h3>
-			<textarea name="desc" v-model="other_desc" placeholder="如果还有上面选中中不包含的证据，请填写。"></textarea>
+			<textarea name="desc" placeholder="如果还有上面选中中不包含的证据，请填写。"></textarea>
 		</div>
 	</div>
 	</div>
@@ -400,6 +400,9 @@
 		})
 
 		$(".pick-area1").pickArea();
+		$(".pick-area2").pickArea();
+		$(".pick-area3").pickArea();
+		$(".pick-area4").pickArea();
 
 		$(".nav_ul").on("click","li",function(){
 			let index = $(this).index();
@@ -410,7 +413,7 @@
 			let index = $(this).index();
 			let conf = [];
 			conf[index] = confirm("是否确认信息？");
-			if(conf){
+			if(conf[index] == true){
 				var nowDate = new Date();
 			    var year = nowDate.getFullYear();
 			    var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1) : nowDate.getMonth() + 1;

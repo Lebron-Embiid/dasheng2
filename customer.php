@@ -52,8 +52,8 @@
 	</div>
 	<div class="service_bottom">
 		<ul>
-			<li><a href="javascript:void(0);"><img src="images/icon/lawyer_icon1.png" height="50" width="48">我是律师</a></li>
-			<li class="active"><a href="javascript:void(0);"><img src="images/icon/lawyer_icon2.png" height="50" width="48">我是客服</a></li>
+			<li><a href="javascript:void(0);"><img src="images/icon/lawyer_icon1.png">我是律师</a></li>
+			<li class="active"><a href="javascript:void(0);"><img src="images/icon/lawyer_icon2.png">我是客服</a></li>
 		</ul>
 	</div>
 </body>

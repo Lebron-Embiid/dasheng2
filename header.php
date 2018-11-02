@@ -1,3 +1,7 @@
+<?php 
+	error_reporting(0); 
+?>
+
 <div class="header">
 	<div class="left <?php if($a==1 || $a==2 || $a==3){ echo "dn"; }else{ echo ""; } ?>"><a href="javascript:history.go(-1);"><img src="images/icon/back.png"></a></div>
 	<div class="center"><script>document.write($(document).attr("title"));</script></div>
@@ -9,7 +13,7 @@
 	$(function(){
 		$(".header .right").click(function(){
 			console.log(window.location)
-			window.location.pathname = "/dasheng2/person.php";
+			window.location.href = "/dasheng2/person.php";
 		})
 	})
 </script>

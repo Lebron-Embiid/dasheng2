@@ -50,6 +50,9 @@
 	outline: none;
 	border: 0;
 }
+.item_right input[type='text'],.item_right input[type='password']{
+	-webkit-box-shadow: 0 0 0px 1000px white inset;	
+}
 /*.item_right ul{
 	overflow: hidden;
 	margin-bottom: .12rem;

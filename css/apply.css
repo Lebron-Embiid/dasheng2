@@ -53,6 +53,16 @@ button {
 .first_item .right .mul_time_box input{
 	width: 40%;
 }
+.first_item .right select{
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: .05rem 0;
+  border: 0;
+  color: #909090;
+  font-size: .24rem;
+}
+
 
 .first_item .right > span{
 	width: 40%;

@@ -28,7 +28,6 @@
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<img class="vip_img" src="images/vip.png">
 	</div>
 	<div class="collect_box">
 		<div class="left">
@@ -36,7 +35,7 @@
 			<p>咨询服务</p>
 		</div>
 		<div class="right">
-			<a href="javascript:void(0);">
+			<a href="javascript:void(0);" class="collect_icon">
 				<img src="images/icon/star2.png">
 				<p>收藏</p>
 			</a>
@@ -110,6 +109,20 @@
 
 		$(".select_service").on("click","button",function(){
 			$(this).toggleClass("active");
+		})
+
+		// 收藏
+		var isCollect = false;
+		$(".collect_icon").click(function(){
+			if(isCollect == false){
+				alert("收藏成功！");
+				$(".collect_icon img").attr("src","images/icon/star2_on.png");
+				isCollect = true;
+			}else{
+				alert("取消收藏！");
+				$(".collect_icon img").attr("src","images/icon/star2.png");
+				isCollect = false;				
+			}
 		})
 	})
 </script>

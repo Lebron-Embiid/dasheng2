@@ -39,16 +39,6 @@
 					<option>北京</option>
 					<option>武汉</option>
 				</select>
-				<!-- <a href="javascript:void(0);">
-					<span>深圳</span>
-					<img src="images/icon/down1.png">
-				</a>
-				<ul>
-					<li>广州</li>
-					<li>上海</li>
-					<li>北京</li>
-					<li>武汉</li>
-				</ul> -->
 			</li>
 			<li class="nav_li">
 				<select>
@@ -58,16 +48,6 @@
 					<option>执行</option>
 					<option>应诉</option>
 				</select>
-				<!-- <a href="javascript:void(0);">
-					<span>服务</span>
-					<img src="images/icon/down1.png">
-				</a>
-				<ul>
-					<li>和解</li>
-					<li>起诉</li>
-					<li>执行</li>
-					<li>应诉</li>
-				</ul> -->
 			</li>
 			<li class="nav_li">
 				<select>
@@ -77,16 +57,6 @@
 					<option>1000~5000</option>
 					<option>5000以上</option>
 				</select>
-				<!-- <a href="javascript:void(0);">
-					<span>价格</span>
-					<img src="images/icon/down1.png">
-				</a>
-				<ul>
-					<li>500以下</li>
-					<li>500~1000</li>
-					<li>1000~5000</li>
-					<li>5000以上</li>
-				</ul> -->
 			</li>
 		</ul>
 	</div>

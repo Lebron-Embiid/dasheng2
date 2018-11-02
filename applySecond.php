@@ -21,11 +21,11 @@
 		<div class="first_box">
 			<div class="first_item">
 				<div class="left">身份证号码</div>
-				<div class="right"><div><input type="text" name="id_card" placeholder="填写身份证号码"></div></div>
+				<div class="right"><div><input type="text" name="id_card" autocomplete="off" placeholder="填写身份证号码"></div></div>
 			</div>
 			<div class="first_item">
 				<div class="left">律师证编号</div>
-				<div class="right"><div><input type="text" name="lawyer_number" placeholder="须填写律师证编号"></div></div>
+				<div class="right"><div><input type="text" name="lawyer_number" autocomplete="off" placeholder="须填写律师证编号"></div></div>
 			</div>
 			<div class="first_item">
 				<div class="left">注册时间</div>
@@ -47,11 +47,23 @@
 			</div>
 			<div class="first_item">
 				<div class="left">任职律所名称</div>
-				<div class="right"><div><input type="text" name="law_name" placeholder="须填写律所名称"></div></div>
+				<div class="right"><div><input type="text" name="law_name" autocomplete="off" placeholder="须填写律所名称"></div></div>
 			</div>
 			<div class="first_item">
 				<div class="left">执业地点</div>
-				<div class="right"><div><input type="text" name="law_address" placeholder="须填写执业地点"></div></div>
+				<div class="right">
+					<div>
+						<!-- <input type="text" name="law_address" autocomplete="off" placeholder="须填写执业地点"> -->
+						<select>
+							<option>请选择城市</option>
+							<option>深圳</option>
+							<option>北京</option>
+							<option>武汉</option>
+							<option>上海</option>
+							<option>广州</option>
+						</select>
+					</div>
+				</div>
 			</div>
 			<div class="first_item">
 				<div class="left">律师证年鉴有效期</div>

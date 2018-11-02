@@ -29,27 +29,27 @@
 			<ul>
 				<li>
 					<span>手机号码：</span>
-					<input type="text" name="phone">
+					<input type="text" autocomplete="off" name="phone">
 				</li>
 				<li>
 					<span>姓名<i>*</i>：</span>
-					<input type="text" name="username">
+					<input type="text" autocomplete="off" name="username">
 				</li>
 				<li>
 					<span>微信：</span>
-					<input type="text" name="weixin">
+					<input type="text" autocomplete="off" name="weixin">
 				</li>
 				<li>
 					<span>Q Q：</span>
-					<input type="text" name="qq">
+					<input type="text" autocomplete="off" name="qq">
 				</li>
 				<li>
 					<span>邮箱：</span>
-					<input type="text" name="email">
+					<input type="text" autocomplete="off" name="email">
 				</li>
 				<li>
 					<span>所在城市：</span>
-					<input type="text" name="city">
+					<input type="text" autocomplete="off" name="city">
 				</li>
 			</ul>
 			<button>保存</button>
@@ -58,40 +58,34 @@
 </body>
 <script>
 	$(function(){
-		// var img = "images/advisory2.png";//imgurl 就是你的图片路径  
-
-		// function getBase64Image(img) {  
-		//      var canvas = document.createElement("canvas");  
-		//      canvas.width = img.width;  
-		//      canvas.height = img.height;  
-		//      var ctx = canvas.getContext("2d");  
-		//      ctx.drawImage(img, 0, 0, img.width, img.height);  
-		//      var ext = img.src.substring(img.src.lastIndexOf(".")+1).toLowerCase();  
-		//      var dataURL = canvas.toDataURL("image/"+ext);  
-		//      return dataURL;  
-		// }  
-
-		// var image = new Image();  
-		// image.src = img;  
-		// image.onload = function(){  
-		//   var base64 = getBase64Image(image);  
-		//   console.log(base64)
-		// }
-
+		function run(input_file,get_data){
+	        /*input_file：文件按钮对象*/
+	        /*get_data: 转换成功后执行的方法*/
+	        if ( typeof(FileReader) === 'undefined' ){
+	            alert("抱歉，你的浏览器不支持 FileReader，不能将图片转换为Base64，请使用现代浏览器操作！");
+	        } else {
+	            try{
+	                /*图片转Base64 核心代码*/
+	                var file = input_file.files[0];
+	                //这里我们判断下类型如果不是图片就返回 去掉就可以上传任意文件
+	                if(!/image\/\w+/.test(file.type)){
+	                    alert("请确保文件为图像类型");
+	                    return false;
+	                }
+	                var reader = new FileReader();
+	                reader.onload = function(){
+	                    get_data(this.result);
+	                }
+	                reader.readAsDataURL(file);
+	            }catch (e){
+	                // alert('图片转Base64出错啦！'+ e.toString())
+	            }
+	        }
+	    }
 		$(".text-center").on("change","input",function(){
-			var filePath=$(this).val();
-			if(filePath.indexOf("jpg")!=-1 || filePath.indexOf("png")!=-1){
-				$(".fileerrorTip").html("").hide();
-		        var arr=filePath.split('\\');
-		        var fileName=arr[arr.length-1];
-		        console.log($(".ls_head").attr("src"))
-		        $(".ls_head").attr("src","images/"+fileName)
-		        console.log($(".ls_head").attr("src"))
-		        console.log(base64)
-			}else{
-		        alert("您未上传文件，或者您上传文件类型有误！");
-		        return false;
-			}
+				run(this, function (data) {
+                   $('.ls_head').attr('src',data);
+               });
 		})
 	})
 </script>

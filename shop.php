@@ -10,11 +10,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/img.css">
-    <link rel="stylesheet" href="css/pick-pcc.css"/>
 	<link rel="stylesheet" href="css/shop.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/imgUp.js"></script>
-	<script src="js/pick-pcc.js"></script>
 </head>
 <body>
 	<?php include "header.php"; ?>
@@ -43,7 +41,7 @@
 			<div class="write_item">
 				<div class="item_left">服务地点</div>
 				<div class="item_right">
-					<div class="pick-area pick-area1" name=""></div>
+					<input type="text" name="shop_address" placeholder="请填写服务地点" autocomplete="off">
 				</div>
 			</div>
 			<div class="write_item">
@@ -128,15 +126,22 @@
 					<input type="text" name="card_name" placeholder="请填写开户名称" autocomplete="off">
 				</div>
 			</div>
+			<div class="write_item">
+				<div class="item_left">用户名</div>
+				<div class="item_right">
+					<input type="text" name="user_name" placeholder="请填写银行卡号" autocomplete="off">
+				</div>
+			</div>
+			<div class="write_item">
+				<div class="item_left">用户密码</div>
+				<div class="item_right">
+					<input type="password" name="user_pwd" placeholder="请填写开户名称" autocomplete="off">
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="buy_box">
 		<a href="lawyer.php">确认提交</a>
 	</div>
 </body>
-<script>
-	$(function(){
-		$(".pick-area1").pickArea();
-	})
-</script>
 </html>

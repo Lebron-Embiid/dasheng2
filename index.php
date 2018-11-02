@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<title>尊贵会员</title>
 	<meta name="keywords" content="关键词">
 	<meta name="description" content="网站描述">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
@@ -29,7 +29,7 @@
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<img class="vip_img" src="images/vip.png">
+		<a href="search.php"><img class="vip_img" src="images/vip.png"></a>
 	</div>
 	<div class="service_box">
 		<div class="container">
@@ -76,7 +76,7 @@
 <script>
 	$(function(){
 		$(".search_box .sleft input").focus(function(){
-			window.location.pathname = "/dasheng2/store.php";
+			window.location.href = "/dasheng2/store.php";
 		})
 	})
 </script>

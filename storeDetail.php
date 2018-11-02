@@ -28,7 +28,7 @@
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<img class="vip_img" src="images/vip.png">
+		<a href="search.php"><img class="vip_img" src="images/vip.png"></a>
 	</div>
 	<div class="detail_select">
 		<div class="left">

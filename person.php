@@ -41,34 +41,38 @@
     	<!-- <h3>VIP专区</h3> -->
     	<ul>
 			<li>
-				<img src="images/lawyer_bg1.jpg" alt="" class="vip_bg">
-				<div class="vip_layer">
-					<h5>您的专属律师</h5>
-					<div class="layer_box">
-						<div class="left">
-							<img src="images/ls_head.png" class="vip_head" alt="">
-						</div>
-						<div class="right">
-							<h4>律师：Alexander</h4>
-							<p>白金VIP：2018-11-03</p>
+				<a href="productDetail.php">
+					<img src="images/lawyer_bg1.jpg" alt="" class="vip_bg">
+					<div class="vip_layer">
+						<h5>您的专属律师</h5>
+						<div class="layer_box">
+							<div class="left">
+								<img src="images/ls_head.png" class="vip_head" alt="">
+							</div>
+							<div class="right">
+								<h4>律师：Alexander</h4>
+								<p>白金VIP：2018-11-03</p>
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
 			</li>
 			<li>
-				<img src="images/lawyer_bg2.jpg" alt="" class="vip_bg">
-				<div class="vip_layer">
-					<h5>您的专属律师</h5>
-					<div class="layer_box">
-						<div class="left">
-							<img src="images/ls_head.png" class="vip_head" alt="">
-						</div>
-						<div class="right">
-							<h4>律师：Alexander</h4>
-							<p>白金VIP：2018-11-03</p>
+				<a href="productDetail.php">
+					<img src="images/lawyer_bg2.jpg" alt="" class="vip_bg">
+					<div class="vip_layer">
+						<h5>您的专属律师</h5>
+						<div class="layer_box">
+							<div class="left">
+								<img src="images/ls_head.png" class="vip_head" alt="">
+							</div>
+							<div class="right">
+								<h4>律师：Alexander</h4>
+								<p>白金VIP：2018-11-03</p>
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
 			</li>
 		</ul>
     </div>
